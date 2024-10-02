@@ -1,0 +1,82 @@
+body 
+      {
+    background-color: rgb(6, 0, 56);
+      }
+
+    
+      
+.top-image 
+      {
+      position: absolute;
+      top: 0px;
+      left: 10px;
+      }
+ h1    
+      { 
+      position: absolute;
+      top: -50px;
+      left: 120px;
+      
+      font-size: 80px;
+      font-family: "Tiny5", sans-serif;
+      font-weight: 400;
+    
+
+      -webkit-user-select: none; 
+      user-select: none; 
+      font-style: normal;
+      color:rgb(255, 238, 0)
+      }
+p 
+      {
+      position: absolute;
+      top: 120px;
+      left: 660px;
+      font-size: 40px;
+      font-family: "Tiny5", sans-serif;
+      font-weight: 400;
+
+      -webkit-user-select: none; 
+      user-select: none; font-style: normal;
+
+      color:rgb(255, 238, 0)
+      }
+
+.first-image 
+      {
+      position: absolute;
+      top: 200px;
+      left: 10px;
+      width: 600px;
+      height: 500px;
+      }
+@font-face  
+      {
+	font-family: 'BDCartoonShoutRegular';
+      src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	 font-weight: normal;
+	font-style: normal;
+      }
+#pacman 
+      {
+    height:450px;
+    width:342px;
+    margin:20px auto;
+      }
+#shim 
+      {
+    font-family: BDCartoonShoutRegular; 
+    position:absolute;
+    visibility:hidden
+      }
+a 
+      { text-decoration:none; 
+      }
+.game
+      {
+        position: absolute;
+        top: 200px;
+        left: 600px;
+      }
+
+      
