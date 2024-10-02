@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML5 Pacman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <style type="text/css">
+    </style>
+  
+</head>
+
+<body>
+  <img src="https://cdn.discordapp.com/attachments/1168596951047086122/1288948227256750163/CJQ95di.png?ex=66f70a14&is=66f5b894&hm=8cdee033c56e325f176103c64e8a53beea1b3de7667d041f6fb02c57cab4086b&" class="top-image">
+        
+    <h1 class="no-select">
+        Pacman
+    </h1>
+    <p class= "no-select" align="center">
+        Pacman 2004
+    </p>
+
+  <div id="pacman" class="game" ></div>
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+</html>
